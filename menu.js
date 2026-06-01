@@ -147,7 +147,7 @@ id:13,
 nome:"Coca-Cola Lata",
 categoria:"bebida",
 preco:6.90,
-imagem:"img/cocaLata.jpg",
+imagem:"img/cocaLata.JPG",
 descricao:"350ml."
 },
 
