@@ -156,7 +156,7 @@ id:14,
 nome:"Suco Natural",
 categoria:"bebida",
 preco:8.90,
-imagem:"img/coca.jpg",
+imagem:"img/sucoNatural.jpg",
 descricao:"Sabores variados.",
 
 sabores:[
