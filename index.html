@@ -1,11 +1,370 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Giva's Restaurante e Pizzaria</title>
+
+<meta name="description"
+content="As melhores pizzas, lanches e pratos da cidade. Faça seu pedido online pelo WhatsApp.">
+
+<link rel="stylesheet" href="/Giva's/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+    🍕 Giva's Restaurante e Pizzaria
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#sobre">Sobre</a>
+<a href="#cardapio">Cardápio</a>
+<a href="#galeria">Galeria</a>
+<a href="#avaliacoes">Avaliações</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+<button id="cartToggle">
+🛒 <span id="cartCount">0</span>
+</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Os melhores sabores da cidade em um só lugar.</h1>
+
+<p>
+Pizzas artesanais, lanches incríveis,
+pratos executivos e delivery rápido.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#cardapio" class="btn">
+Ver Cardápio
+</a>
+
+<a href="#" class="btn btn-whatsapp">
+Fazer Pedido
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOBRE -->
+
+<section class="sobre" id="sobre">
+
+<h2>Sobre Nós</h2>
+
+<p>
+
+A Giva's Restaurante e Pizzaria nasceu com a missão de oferecer refeições saborosas, ingredientes selecionados e atendimento familiar.
+
+</p>
+
+<div class="diferenciais">
+
+<div class="card">
+🍅
+<h3>Ingredientes Selecionados</h3>
+</div>
+
+<div class="card">
+👨‍👩‍👧‍👦
+<h3>Atendimento Familiar</h3>
+</div>
+
+<div class="card">
+🏠
+<h3>Ambiente Aconchegante</h3>
+</div>
+
+<div class="card">
+🚚
+<h3>Delivery Rápido</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROMOÇÕES -->
+
+<section class="promocoes">
+
+<h2>Promoções da Semana</h2>
+
+<div class="slider">
+
+<div class="slide active">
+🍕 Terça da Pizza
+</div>
+
+<div class="slide">
+🍔 Quarta do Hambúrguer
+</div>
+
+<div class="slide">
+👨‍👩‍👧 Combo Família
+</div>
+
+</div>
+
+</section>
+
+<!-- CARDÁPIO -->
+
+<section id="cardapio">
+
+<h2>Nosso Cardápio</h2>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Pesquisar produto..."
+>
+
+<div class="filters">
+
+<button data-filter="all">Todos</button>
+<button data-filter="pizza">Pizzas</button>
+<button data-filter="lanche">Lanches</button>
+<button data-filter="porcao">Porções</button>
+<button data-filter="prato">Pratos</button>
+<button data-filter="bebida">Bebidas</button>
+<button data-filter="sobremesa">Sobremesas</button>
+
+</div>
+
+<div id="menuContainer" class="menu-grid">
+
+</div>
+
+</section>
+
+<!-- CARRINHO -->
+
+<div id="cartSidebar" class="cart-sidebar">
+<button id="closeCart" class="close-cart">
+✕
+</button>
+<h2>Seu Pedido</h2>
+
+<div id="cartItems"></div>
+
+<h3>Total: R$ <span id="cartTotal">0,00</span></h3>
+
+<button id="checkoutBtn">
+Finalizar Pedido
+</button>
+
+</div>
+
+<!-- GALERIA -->
+
+<section id="galeria">
+
+<h2>Galeria</h2>
+
+<div class="gallery">
+
+<img src="/Giva's/img/calabresa.jpg" alt="">
+<img src="/Giva's/img/bacon.jpg" alt="">
+<img src="/Giva's/img/chocolate.jpg" alt="">
+<img src="/Giva's/img/4queijos.jpg" alt="">
+<img src="/Giva's/img/executivo.jpg" alt="">
+
+</div>
+
+</section>
+
+<!-- AVALIAÇÕES -->
+
+<section id="avaliacoes">
+
+<h2>Avaliações</h2>
+
+<div class="reviews">
+
+<div class="review">
+
+<img src="/Giva's/img/personagem1.jpg">
+
+<h4>Maria Silva</h4>
+
+<p>★★★★★</p>
+
+<p>
+Melhor pizza da cidade.
+</p>
+
+</div>
+
+<div class="review">
+
+<img src="/Giva's/img/personagem2.jpg">
+
+<h4>João Pedro</h4>
+
+<p>★★★★★</p>
+
+<p>
+Atendimento excelente.
+</p>
+
+</div>
+
+<div class="review">
+
+<img src="/Giva's/img/personagem3.jpg">
+
+<h4>Ana Clara</h4>
+
+<p>★★★★★</p>
+
+<p>
+Entrega muito rápida.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAPA -->
+
+<section id="contato">
+
+<h2>Onde Estamos</h2>
+
+<div class="map">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.094180228718!2d-48.9512992!3d-16.9699171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935f24a4dd39ebcf%3A0xa82a03b66bbd92c!2sGiva&#39;s%20Restaurante%20E%20Pizzaria!5e0!3m2!1spt-BR!2sbr!4v1780317834721!5m2!1spt-BR!2sbr" 
+allowfullscreen=""></iframe>
+
+</div>
+
+<div class="contact-info">
+
+<p>📍 Av. Sen. Pedro Ludovíco, 495 - Centro, Bela Vista de Goiás - GO, 75240-000</p>
+
+<p>📞 (062) 3551-2550</p>
+
+<p>🕒 Todos os dias 10h às 23h</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+
+<h3>Giva's Restaurante e Pizzaria</h3>
+
+<p>Os melhores sabores da cidade.</p>
+
+</div>
+
+<div>
+
+<a href="#">
+Instagram
+</a>
+
+<a href="#">
+Facebook
+</a>
+
+<a href="#">
+WhatsApp
+</a>
+
+</div>
+
+<p>
+
+© 2026 Giva's Restaurante e Pizzaria
+
+</p>
+
+</footer>
+
+<!--TESTE ESCOLHA TAMANHO-->
+<div id="pizzaModal" class="pizza-modal">
+
+<div class="pizza-modal-content">
+
+<h2 id="pizzaTitle"></h2>
+
+<button class="size-btn" data-size="pequena">
+Pequena
+</button>
+
+<button class="size-btn" data-size="media">
+Média
+</button>
+
+<button class="size-btn" data-size="grande">
+Grande
+</button>
+
+<button id="closePizzaModal">
+Cancelar
+</button>
+
+</div>
+
+</div>
+
+<div id="juiceModal" class="pizza-modal">
+
+    <div class="pizza-modal-content">
+
+        <h2 id="juiceTitle">
+            Escolha o sabor
+        </h2>
+
+        <div id="juiceOptions"></div>
+
+        <button id="closeJuiceModal">
+            Cancelar
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/Giva's/menu.js"></script>
+<script src="/Giva's/cart.js"></script>
+<script src="/Giva's/app.js"></script>
+
 </body>
 </html>
