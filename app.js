@@ -7,8 +7,6 @@ document.getElementById("pizzaModal");
 const sizeTitle =
 document.getElementById("sizeTitle");
 
-const sizeButtons =
-document.querySelectorAll(".size-btn");
 
 let selectedProduct = null;
 let selectedJuice = null;
@@ -276,39 +274,7 @@ document
    TAMANHO DA PIZZA
 ===================== */
 
-sizeButtons.forEach(btn => {
 
-    btn.addEventListener("click", () => {
-
-        if(!selectedPizza) return;
-
-        const tamanho =
-        btn.dataset.size;
-
-        const preco = selectedProduct.tamanhos[tamanho];
-
-        addToCart({
-
-            id:
-            selectedProduct.id +
-            "-" +
-            tamanho,
-
-            nome:
-            selectedProduct.nome +
-            " (" +
-            tamanho.toUpperCase() +
-            ")",
-
-            preco:preco
-
-        });
-
-        pizzaModal.classList.remove("active");
-
-    });
-
-});
 
 /* =====================
    FECHAR MODAL
