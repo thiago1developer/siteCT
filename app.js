@@ -1,4 +1,4 @@
-const menuContainer =
+umconst menuContainer =
 document.getElementById("menuContainer");
 
 const pizzaModal =
@@ -450,3 +450,7 @@ setInterval(() => {
     .classList.add("active");
 
 },3000);
+
+window.handleProduct = handleProduct;
+window.selectSize = selectSize;
+window.selectJuice = selectJuice;
