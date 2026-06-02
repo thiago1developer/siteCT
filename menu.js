@@ -63,7 +63,7 @@ tamanhos:{
 {
 id:5,
 nome:"Pizza Chocolate",
-categoria:"sobremesa",
+categoria:"pizza",
 imagem:"img/chocolate.jpg",
 descricao:"Chocolate ao leite e granulado.",
 
