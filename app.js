@@ -13,6 +13,82 @@ document.querySelectorAll(".size-btn");
 let selectedProduct = null;
 let selectedJuice = null;
 
+
+/*FUNÇÃO TAMANHO*/
+
+function openSizeModal(produto){
+
+    selectedProduct = produto;
+
+    const container =
+    document.getElementById("sizeOptions");
+
+    container.innerHTML = "";
+
+    Object.entries(produto.tamanhos)
+    .forEach(([nome,preco]) => {
+
+        container.innerHTML += `
+
+        <button
+        class="size-btn"
+        onclick="selectSize(
+        '${nome}',
+        ${preco}
+        )">
+
+        ${nome.toUpperCase()}
+        - R$ ${preco.toFixed(2)}
+
+        </button>
+
+        `;
+
+    });
+
+    document
+    .getElementById("pizzaTitle")
+    .textContent =
+    produto.nome;
+
+    document
+    .getElementById("pizzaModal")
+    .classList.add("active");
+
+}
+
+/*FUNÇÃO PARA SELECIONAR*/
+
+
+function selectSize(
+tamanho,
+preco
+){
+
+    addToCart({
+
+        id:
+        selectedProduct.id +
+        "-" +
+        tamanho,
+
+        nome:
+        selectedProduct.nome +
+        " (" +
+        tamanho.toUpperCase() +
+        ")",
+
+        preco:preco
+
+    });
+
+    document
+    .getElementById("pizzaModal")
+    .classList.remove("active");
+
+}
+
+
 /* =====================
    RENDER MENU
 ===================== */
