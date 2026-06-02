@@ -4,7 +4,6 @@ const menu = [
 id:1,
 nome:"Pizza Calabresa",
 categoria:"pizza",
-preco:57.90,
 imagem:"img/calabresa.jpg",
 descricao:"Molho artesanal, muçarela, calabresa e cebola.",
 
@@ -20,7 +19,6 @@ tamanhos:{
 id:2,
 nome:"Pizza Portuguesa",
 categoria:"pizza",
-preco:62.90,
 imagem:"img/portuguesa.jpg",
 descricao:"Presunto, ovos, cebola e muçarela.",
 
@@ -36,7 +34,6 @@ tamanhos:{
 id:3,
 nome:"Pizza Frango com Catupiry",
 categoria:"pizza",
-preco:64.90,
 imagem:"img/frangoComCatupiry.jpg",
 descricao:"Frango desfiado e catupiry.",
 
@@ -52,7 +49,6 @@ tamanhos:{
 id:4,
 nome:"Pizza Quatro Queijos",
 categoria:"pizza",
-preco:66.90,
 imagem:"img/4queijos.jpg",
 descricao:"Mix especial de queijos.",
 
@@ -68,7 +64,6 @@ tamanhos:{
 id:5,
 nome:"Pizza Chocolate",
 categoria:"sobremesa",
-preco:49.90,
 imagem:"img/chocolate.jpg",
 descricao:"Chocolate ao leite e granulado.",
 
@@ -101,7 +96,6 @@ descricao:"Hambúrguer, bacon e queijo."
 id:8,
 nome:"Batata Frita",
 categoria:"porcao",
-preco:25.90,
 imagem:"img/batata.jpg",
 descricao:"Porção generosa.",
 
@@ -153,7 +147,6 @@ descricao:"Diversos sabores."
 id:13,
 nome:"Coca-Cola Lata",
 categoria:"bebida",
-preco:6.90,
 imagem:"img/coca.jpg",
 descricao:"350ml.",
 
@@ -199,7 +192,6 @@ tamanhos:{
 id:16,
 nome:"Suco Natural",
 categoria:"bebida",
-preco:8.90,
 imagem:"img/sucoNatural.jpg",
 descricao:"Sabores variados.",
 
@@ -240,7 +232,6 @@ descricao:"Receita tradicional."
 id:18,
 nome:"Pizza THIAGO",
 categoria:"pizza",
-preco:1559.90,
 imagem:"img/thn.png",
 descricao:"Molho artesanal, muçarela, tomate e manjericão.",
 
