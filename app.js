@@ -10,7 +10,7 @@ document.getElementById("pizzaTitle");
 const sizeButtons =
 document.querySelectorAll(".size-btn");
 
-let selectedPizza = null;
+let selectedProduct = null;
 let selectedJuice = null;
 
 /* =====================
@@ -104,10 +104,9 @@ function handleProduct(id){
 
     if(produto.tamanhos){
 
-        selectedPizza = produto;
+        selectedProduct = produto;
 
-        pizzaTitle.textContent =
-        produto.nome;
+document.getElementById("pizzaTitle").textContent = produto.nome;
 
         pizzaModal.classList.add("active");
 
@@ -215,18 +214,17 @@ sizeButtons.forEach(btn => {
         const tamanho =
         btn.dataset.size;
 
-        const preco =
-        selectedPizza.tamanhos[tamanho];
+        const preco = selectedProduct.tamanhos[tamanho];
 
         addToCart({
 
             id:
-            selectedPizza.id +
+            selectedProduct.id +
             "-" +
             tamanho,
 
             nome:
-            selectedPizza.nome +
+            selectedProduct.nome +
             " (" +
             tamanho.toUpperCase() +
             ")",
