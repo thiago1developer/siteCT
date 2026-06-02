@@ -4,8 +4,8 @@ document.getElementById("menuContainer");
 const pizzaModal =
 document.getElementById("pizzaModal");
 
-const pizzaTitle =
-document.getElementById("pizzaTitle");
+const sizeTitle =
+document.getElementById("sizeTitle");
 
 const sizeButtons =
 document.querySelectorAll(".size-btn");
@@ -47,7 +47,7 @@ function openSizeModal(produto){
     });
 
     document
-    .getElementById("pizzaTitle")
+    .getElementById("sizeTitle")
     .textContent =
     produto.nome;
 
@@ -152,7 +152,7 @@ function renderMenu(produtos){
 
         selectedPizza = produto;
 
-        pizzaTitle.textContent =
+        sizeTitle.textContent =
         produto.nome;
 
         pizzaModal.classList.add("active");
@@ -177,7 +177,7 @@ function handleProduct(id){
 
         selectedProduct = produto;
 
-document.getElementById("pizzaTitle").textContent = produto.nome;
+document.getElementById("sizeTitle").textContent = produto.nome;
 
         pizzaModal.classList.add("active");
 
