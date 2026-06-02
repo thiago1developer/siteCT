@@ -196,7 +196,7 @@ id:15,
 nome:"Pudim",
 categoria:"sobremesa",
 preco:9.90,
-imagem:"img/pudim.JPG",
+imagem:"img/pudim.jpg",
 descricao:"Receita tradicional."
 },
 {
