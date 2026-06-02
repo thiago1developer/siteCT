@@ -136,7 +136,7 @@ id:11,
 nome:"Picanha na Chapa",
 categoria:"prato",
 preco:69.90,
-imagem:"img/picanha.JPG",
+imagem:"img/picanha.jpg",
 descricao:"Serve duas pessoas."
 },
 
@@ -196,7 +196,7 @@ id:15,
 nome:"Pudim",
 categoria:"sobremesa",
 preco:9.90,
-imagem:"img/pudim.jpg",
+imagem:"img/pudim.JPG",
 descricao:"Receita tradicional."
 },
 {
