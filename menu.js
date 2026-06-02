@@ -103,7 +103,14 @@ nome:"Batata Frita",
 categoria:"porcao",
 preco:25.90,
 imagem:"img/batata.jpg",
-descricao:"Porção generosa."
+descricao:"Porção generosa.",
+
+tamanhos:{
+    pequena:15.90,
+    media:25.90,
+    grande:35.90
+}
+
 },
 
 {
