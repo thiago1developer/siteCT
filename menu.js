@@ -155,11 +155,48 @@ nome:"Coca-Cola Lata",
 categoria:"bebida",
 preco:6.90,
 imagem:"img/coca.jpg",
-descricao:"350ml."
+descricao:"350ml.",
+
+tamanhos:{
+    lata:6.90,
+    "600ml":9.90,
+    "1l":11.90,
+    "2l":14.90
+}
+
 },
 
 {
 id:14,
+nome:"Guaraná Antarctica",
+categoria:"bebida",
+imagem:"img/guarana.jpg",
+descricao:"Escolha o tamanho.",
+
+tamanhos:{
+    lata:5.90,
+    "600ml":8.90,
+    "1l":10.90,
+    "2l":13.90
+}
+},
+{
+id:15,
+nome:"Fanta",
+categoria:"bebida",
+imagem:"img/fanta.jpg",
+descricao:"Escolha o tamanho.",
+
+tamanhos:{
+    lata:5.90,
+    "600ml":8.90,
+    "1l":10.90,
+    "2l":13.90
+}
+},
+
+{
+id:16,
 nome:"Suco Natural",
 categoria:"bebida",
 preco:8.90,
@@ -192,7 +229,7 @@ preco:8.90
 },
 
 {
-id:15,
+id:17,
 nome:"Pudim",
 categoria:"sobremesa",
 preco:9.90,
@@ -200,7 +237,7 @@ imagem:"img/pudim.jpg",
 descricao:"Receita tradicional."
 },
 {
-id:16,
+id:18,
 nome:"Pizza THIAGO",
 categoria:"pizza",
 preco:1559.90,
