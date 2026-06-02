@@ -93,56 +93,51 @@ preco
    RENDER MENU
 ===================== */
 
+
 function renderMenu(produtos){
 
     menuContainer.innerHTML = "";
 
     produtos.forEach(produto => {
 
-        const precoExibido =
-        produto.tamanhos
-        ? produto.tamanhos.media
-        : produto.preco;
+        let preco;
+
+        if(produto.tamanhos){
+
+            preco =
+            Object.values(produto.tamanhos)[0];
+
+        }else{
+
+            preco = produto.preco;
+
+        }
 
         menuContainer.innerHTML += `
-
         <div class="menu-item">
 
-            <img
-            src="${produto.imagem}"
-            alt="${produto.nome}">
+            <img src="${produto.imagem}">
 
-            <div class="menu-content">
+            <h3>${produto.nome}</h3>
 
-                <h3>${produto.nome}</h3>
+            <p>${produto.descricao}</p>
 
-                <p>${produto.descricao}</p>
+            <span>
+                R$ ${preco.toFixed(2)}
+            </span>
 
-                <div class="price">
+            <button
+            onclick="handleProduct(${produto.id})">
 
-                R$ ${precoExibido.toFixed(2)}
+            Adicionar ao Pedido
 
-                </div>
-
-                <button
-                class="add-cart"
-                onclick="handleProduct(${produto.id})">
-
-                Adicionar ao Pedido
-
-                </button>
-
-            </div>
+            </button>
 
         </div>
-
         `;
-
     });
-
 }
 
-renderMenu(menu);
 
 /* =====================
    ADICIONAR PRODUTO
